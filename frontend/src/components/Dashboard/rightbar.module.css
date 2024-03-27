@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.box::-webkit-scrollbar {
+  width: 6px;
+  display: block;
+}
+
+.box::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 30px; 
+}
+
+.box::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 30px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  background: rgb(0, 183, 255);
+  border-radius: 10px;
+}
+
+.containerEl {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradientOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Высота градиента в 100 пикселей (настройте по вашему желанию) */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 70%);
+  pointer-events: none;
+}
+
+.icon > * {
+  width: 50px;
+  height: 50px;
+}
+
+.containerTrans {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

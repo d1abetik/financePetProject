@@ -1,0 +1,38 @@
+.topnav {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+.topnav > * {
+  padding-inline: 40px;
+  color: white;
+}
+
+.topnav > *:hover {
+  cursor: pointer;
+  color: rgb(38, 132, 255);
+  transition: 0.2s ease-in-out .01s;
+}
+
+.picked {
+  font-size: 30px;
+}
+
+.unpicked {
+  color: grey;
+}
+
+.unpicked:hover {
+  font-size: 20px;
+  transition: 0.2s ease-in-out .01s;
+}
+
+.unpicked:not(:hover) {
+  transition: 0.2s ease-in-out .01s;
+  color: grey;
+}
+
+.topnav > *:not(:hover) {
+  transition: 0.2s ease-in-out .01s;
+}

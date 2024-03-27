@@ -1,0 +1,55 @@
+.card {
+  width: 400px;
+  height: 260px;
+  border: 2px solid rgb(2, 154, 255);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 14px rgba(2, 154, 255, 0.473));
+  transition: 0.2s ease-out .01s;
+}
+
+.boxModal {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.formBox > * {
+  padding: 20px;
+  width: 300px;
+}
+
+.formBox > button {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.goalSet {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,87 @@
+* {
+  user-select: none;
+}
+
+/* .cardStyle::before {
+  width: 400px;
+  height: 260px;
+  opacity: 100%;
+  transition: 0.4s ease-in-out .1s;
+} */
+
+.cardStyle {
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  height: 260px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(224, 224, 224);
+  transition: 0.3s ease-in-out .06s;
+}
+
+/* .cardStyle::after {
+  transform: matrix3d(0.5,        0,      -0.866025, 0,
+  0.595877,   1.2,    -1.03209,  0,
+  0.866025,   0,       0.5,      0,
+  25.9808,     0,      15,        1);
+} */
+
+.blBal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blBalsecond {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.textLeft {
+  text-align: left;
+}
+
+.secondary {
+  width: 300px;
+  height: 180px;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out .06s;
+}
+
+.backTxt {
+  padding-top: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.txtMain {
+  padding-top: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secBack {
+  background-color: grey;
+  width: 400px;
+}
+

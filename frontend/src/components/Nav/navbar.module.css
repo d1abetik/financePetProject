@@ -1,0 +1,19 @@
+.logout {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logout > button {
+  width: 80px;
+}
+
+.logout > span {
+  margin-inline: 20px;
+}
+
+.logout > span:hover {
+  color: rgb(105, 105, 255);
+  cursor: pointer;
+  transition: 0.2s ease-in-out .01s;
+}

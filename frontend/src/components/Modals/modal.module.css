@@ -1,0 +1,41 @@
+.modalChange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.boxChange {
+  background-color: white;
+  border-radius: 20px;
+  width: 420px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boxChange > h2 {
+  margin-left: 0px;
+  margin-bottom: 40px;
+}
+
+.controllerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.controllerBox > * {
+  margin-block: 10px;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonBox > * {
+  width: 160px;
+}

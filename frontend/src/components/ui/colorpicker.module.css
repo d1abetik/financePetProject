@@ -1,0 +1,32 @@
+.picker {
+  display: flex;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+  display: flex;
+  height: 40px;
+}
+
+.picker > label {
+  color: black;
+  /* background-color: white;
+  border-radius: 30px;
+  width: 140px;
+  display: flex;
+  justify-content: center; */
+}
+
+#colorPicker {
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  border-radius: 40%;
+  width: 120px;
+  height: 40px;
+  margin-left: 40px;
+  background-color: transparent;
+}
+
+.backGr {
+  width: 110px;
+}

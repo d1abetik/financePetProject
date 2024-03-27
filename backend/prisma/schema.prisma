@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  @@map("users")
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  username  String    @unique
+  password  String
+  cards     Card[]
+  transaction Transaction[]
+}
+
+model Card {
+  @@map("card")
+  id Int @id @default(autoincrement())
+  name String @unique
+  balance String @default("0.00") @unique
+  goal Int @unique
+  type String @default("$")
+  color String
+  user     User?    @relation(fields: [userId], references: [id])
+  userId   Int?
+  history Transaction[]
+
+  @@unique([id, name, userId])
+}
+
+model Transaction {
+  @@map("transaction")
+  id Int @id @default(autoincrement())
+  card Card @relation(fields: [cardId, cardName, userId], references: [id, name, userId])
+  user User @relation(fields: [userName], references: [username])
+  cardId Int
+  cardName String
+  userName String
+  amount Int
+  goal Int
+  nameTrans String
+  createdAt DateTime @default(now()) @db.Date
+  userId Int
+  type String
+}

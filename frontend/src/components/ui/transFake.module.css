@@ -1,0 +1,50 @@
+.containerFake {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 10px;
+}
+
+.itemLogo {
+  background-color: grey;
+  height: 100%;
+  width: 60px;
+  border-radius: 10px;
+}
+
+.itemName {
+  background-color: grey;
+  height: 14px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 14px;
+  margin-top: 2px;
+  margin-block: 10px;
+}
+
+.itemName:first-child {
+  width: 160px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.fakeBut {
+  background-color: grey;
+  width: 60px;
+  height: 100%;
+  border-radius: 10px;
+  margin-inline: 6px;
+}
+
+.rowFlex {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,18 @@
+.box {
+  background-color: white;
+  color: black;
+  width: 400px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.modal {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.555);
+}
